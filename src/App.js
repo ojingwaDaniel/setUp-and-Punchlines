@@ -1,23 +1,27 @@
-import logo from './logo.svg';
 import './App.css';
+import Jokes from './jokes';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Jokes
+        setUp="My wife told me to stop acting like a flamingo."
+        punchlines="I had to put my foot down."
+      />
+      <Jokes
+        setUp="What is Whitney Houston’s favorite type of coordination?"
+        punchlines="HAAANNNNND EYEEEEEEE.
+
+"
+      />
+      <Jokes
+        setUp="Why are gay people always smiling?"
+        punchlines="Because they can’t keep a straight face."
+      />
+      <Jokes
+        setUp="Why did David Hasselhoff change his name to “The Hoff?”"
+        punchlines="It’s less hassle."
+      />
     </div>
   );
 }
