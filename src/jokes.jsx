@@ -1,8 +1,9 @@
 export default function Jokes({setUp,punchlines}) {
     return (
         <div>
-            <span>{setUp }</span>
-            <h3>{ punchlines}</h3>
+            {setUp && <span> SetUp : {setUp }</span>}
+            <h3>Punchline :{punchlines}</h3>
+            <hr />
         </div>
     )
 }
