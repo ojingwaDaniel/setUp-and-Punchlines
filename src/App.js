@@ -1,14 +1,17 @@
 import './App.css';
 import Jokes from './jokes';
+import jokesData from './jokesData';
 
 function App() {
-  return (
-    <div className="App">
-      
-    </div>
-  );
+  const DataElement = jokesData.map(jokes => {
+    return <Jokes setUp={jokes.setUp} punchlines={jokes.punchlines}/>
+  })
+    return (
+      <div className = "App" >
+      {DataElement}
+    </div >
+  )
 }
-
 export default App;
 {/* <Jokes punchlines="It's hard to explain puns to kleptomaniacs because they always take things literally." />
       <Jokes
